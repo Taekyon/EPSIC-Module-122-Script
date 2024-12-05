@@ -16,3 +16,4 @@ Average = a + b + c + d + e + f + g / 7
 print("Le nombre le plus élevé est : ", Highest)
 print("Le nombre le plus faible est : ", Lowest)
 print("La moyenne est : ", Average)
+
