@@ -1,7 +1,7 @@
+# CONDITIONS #
 x = 46
 y = 49
 
-# CONDITIONS #
 print("CONDITIONS--")
 if x > y:
     print("X est plus grand que Y")
