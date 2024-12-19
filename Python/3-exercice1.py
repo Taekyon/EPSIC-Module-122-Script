@@ -16,12 +16,8 @@
 # for philosophe in philosophes:
 #     print (f"Nom du philosophe :   {philosophe}")
 
-# Exercice 1
-# Créer un script pour convertir une valeur décimal en binaire.
-nbr = int(input("Entrez le nombre à convertir :"))
-binaire = 0
+# # TENTATIVE 1: NE MARCHE PAS, TROP COMPLEXE
 # # Définir l'incrément
-# # NE MARCHE PAS, TROP COMPLEXE
 # i = 0
 # while i < nbr:
 #     i += 1
@@ -29,13 +25,13 @@ binaire = 0
 #     if i % 2 == 1:
 #         resultat += 1
 
+# Exercice 1: tentative 2 (inspiration Youtube)
+# Créer un script pour convertir une valeur décimal en binaire.
+nbr = int(input("Entrez le nombre à convertir :"))
+binaire:str = ""
 
-# TODO
-# trouver comment append
 while nbr > 0:
-    nbr /= 2
-    print(f"décimal = {nbr}")
-    if nbr % 2 == 1:
-        nbr -= 1
-        print(nbr)
-        continue
+    reste=nbr%2
+    binaire=str(reste)+binaire
+    nbr=nbr//2
+    print(binaire)
