@@ -29,12 +29,13 @@ print(f"Nombre {nombre}, racine {racine}")
 if nombre < 2:
     estPremier = False
 
-elif nombre > 2
+elif nombre > 2:
+    print(f"Le nombre {nombre} est plus grand que 2")
 
-for i in range(2, racine+1):
-    print(f"Test avec i comme valeur: {i}")
-    # Si on trouve une valeur de i qui divise le nombre, nombre est premier.
-    if nombre % i == 0:
-        print(f"Le nombre {nombre} n'est pas premier")
-        estPremier = False
+    for i in range(2, racine+1):
+        print(f"Test avec i comme valeur: {i}")
+        # Si on trouve une valeur de i qui divise le nombre, nombre est premier.
+        if nombre % i == 0:
+            print(f"Le nombre {nombre} n'est pas premier")
+            estPremier = False
         break
